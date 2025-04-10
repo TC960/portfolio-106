@@ -1,3 +1,6 @@
+:root {
+  --color-accent: oklch(65% 50% 0);
+}
 
 * {
   box-sizing: border-box;
@@ -9,31 +12,47 @@
 body {
   background-color: #f8f9fa;
   color: #333;
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 100ch;
+  margin-inline: auto;
   padding: 20px;
+  accent-color: var(--color-accent);
+} 
+
+nav {
+  display: flex;
+  gap: 20px;
+  padding: 15px 0;
+  border-bottom: 1px solid oklch(80% 3% 200);
+  margin-bottom: 1.5em; 
 }
 
 nav ul {
-  list-style: none;
-  margin-bottom: 30px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid #3498db;
+  display: contents;
 }
 
 nav li {
-  display: inline;
-  margin-right: 15px;
+  display: contents;
 }
 
 nav a {
-  text-decoration: none;
-  color: #3498db;
+  flex: 1;
+  text-align: center;
+  color: inherit;
   font-weight: 500;
+  text-decoration: none; 
+  padding: 0.5em; 
+}
+
+nav a.current {
+  font-weight: bold;
+  border-bottom: 0.4em solid oklch(80% 3% 200);
 }
 
 nav a:hover {
-  color: #2078b0;
+  border-bottom: 0.4em solid var(--color-accent);
+  padding-bottom: 0.1em;
+  color: var(--color-accent);
+
 }
 
 h1 {
