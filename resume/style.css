@@ -1,4 +1,8 @@
-* {
+:root {
+    --color-accent: oklch(65% 50% 0);
+  }
+  
+  * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -8,42 +12,59 @@
   body {
     background-color: #f8f9fa;
     color: #333;
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 100ch;
+    margin-inline: auto;
     padding: 20px;
+    accent-color: var(--color-accent);
+  }
+  
+  nav {
+    display: flex;
+    gap: 20px;
+    padding: 15px 0;
+    border-bottom: 1px solid oklch(80% 3% 200);
+    margin-bottom: 1.5em; 
   }
   
   nav ul {
-    list-style: none;
-    margin-bottom: 30px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #3498db;
+    display: contents;
   }
   
   nav li {
-    display: inline;
-    margin-right: 15px;
+    display: contents;
   }
   
   nav a {
-    text-decoration: none;
-    color: #3498db;
+    flex: 1;
+    text-align: center;
+    color: inherit;
     font-weight: 500;
+    text-decoration: none; 
+    padding: 0.5em;
+    padding-bottom: 0.1em;
+    border-bottom: 0.4em solid transparent;
+  }
+  
+  nav a.current {
+    font-weight: bold;
+    border-bottom: 0.4em solid oklch(80% 3% 200);
   }
   
   nav a:hover {
-    color: #2078b0;
+    border-bottom: 0.4em solid var(--color-accent);
+    color: var(--color-accent);
+    background-color: oklch(from var(--color-accent) 95% 5% h);
   }
   
   section {
     margin-bottom: 30px;
     background-color: white;
-    padding: 15px;
-    border-left: 3px solid #3498db;
+    padding: 20px;
+    border-left: 3px solid var(--color-accent);
   }
   
   section h2 {
-    color: #3498db;
+    color: #333;
     margin-bottom: 15px;
     font-size: 1.4em;
   }
@@ -64,7 +85,7 @@
   
   article p {
     margin-bottom: 8px;
-    line-height: 1.4;
+    line-height: 1.6;
   }
   
   article time {
@@ -79,7 +100,7 @@
   
   article li {
     margin-bottom: 5px;
-    line-height: 1.4;
+    line-height: 1.6;
   }
   
   strong {
