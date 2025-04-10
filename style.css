@@ -59,7 +59,7 @@ nav a:hover {
 h1 {
   color: #333;
   margin-bottom: 20px;
-  border-left: 3px solid #3498db;
+  border-left: 3px solid var(--color-accent);
   padding-left: 10px;
   font-size: 2em;
 }
@@ -72,6 +72,6 @@ p {
 img {
   max-width: 100%;
   height: auto;
-  border-left: 3px solid #3498db;
+  border-left: 3px solid var(--color-accent);
   display: block;
 }
