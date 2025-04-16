@@ -1,7 +1,3 @@
-const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
-  ? "/"                  
-  : "/portfolio-106/";         
-
 let pages = [
   { url: '', title: 'Home' },
   { url: 'projects/', title: 'Projects' },
@@ -13,6 +9,10 @@ let pages = [
 let nav = document.createElement('nav');
 document.body.prepend(nav);
 
+const BASE_PATH = (location.hostname === "localhost" || location.hostname === "127.0.0.1")
+  ? "/"                  
+  : "/portfolio-106/";       
+  
 for (let p of pages) {
   let url = p.url;
   let title = p.title;
