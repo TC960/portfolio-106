@@ -18,13 +18,12 @@ body {
   accent-color: var(--color-accent);
 }
 
-/* Navigation */
 nav {
   display: flex;
   gap: 20px;
   padding: 0;
   margin-bottom: 1.5em;
-  border-bottom: 4px solid oklch(80% 3% 200); /* main underline */
+  border-bottom: 1px solid oklch(80% 3% 200); 
 }
 
 nav ul {
@@ -41,14 +40,14 @@ nav a {
   color: inherit;
   font-weight: 500;
   text-decoration: none;
-  padding: 1em 0 0.6em; /* top | sides | bottom */
-  border-bottom: 4px solid transparent;
+  padding: 1em 0 0.6em; 
+  border-bottom: 1px solid transparent;
   transition: all 0.2s ease;
 }
 
 nav a.current {
   font-weight: bold;
-  border-bottom: 4px solid oklch(80% 3% 200); /* same color as nav border */
+  border-bottom: 4px solid oklch(80% 3% 200); 
 }
 
 nav a:hover {
@@ -57,7 +56,6 @@ nav a:hover {
   background-color: oklch(from var(--color-accent) 95% 5% h);
 }
 
-/* Headings */
 h1 {
   color: #333;
   margin-bottom: 20px;
@@ -66,13 +64,11 @@ h1 {
   font-size: 2em;
 }
 
-/* Paragraphs */
 p {
   line-height: 1.6;
   margin-bottom: 25px;
 }
 
-/* Images */
 img {
   max-width: 100%;
   height: auto;

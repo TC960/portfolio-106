@@ -18,13 +18,12 @@ body {
   accent-color: var(--color-accent);
 }
 
-/* ✅ NAVIGATION */
 nav {
   display: flex;
   gap: 20px;
   padding: 0;
   margin-bottom: 1.5em;
-  border-bottom: 4px solid oklch(80% 3% 200);
+  border-bottom: 1px solid oklch(80% 3% 200);
 }
 
 nav ul {
@@ -42,7 +41,7 @@ nav a {
   font-weight: 500;
   text-decoration: none;
   padding: 1em 0 0.6em;
-  border-bottom: 4px solid transparent;
+  border-bottom: 1px solid transparent;
   transition: all 0.2s ease;
 }
 
