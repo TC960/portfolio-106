@@ -35,3 +35,34 @@ for (let p of pages) {
   
   nav.append(a);
 }
+
+document.body.insertAdjacentHTML(
+  'afterbegin',
+  `
+  <label class="color-scheme">
+    Theme:
+    <select id="theme-select">
+      <option value="light dark" selected>Automatic</option>
+      <option value="light">Light</option>
+      <option value="dark">Dark</option>
+    </select>
+  </label>
+  `
+);
+
+const themeSelect = document.getElementById('theme-select');
+
+function setColorScheme(colorScheme) {
+  document.documentElement.style.colorScheme = colorScheme;
+  themeSelect.value = colorScheme;
+  localStorage.colorScheme = colorScheme;
+}
+
+if ("colorScheme" in localStorage) {
+  setColorScheme(localStorage.colorScheme);
+}
+
+themeSelect.addEventListener('change', function() {
+  const selectedTheme = this.value;
+  setColorScheme(selectedTheme);
+});

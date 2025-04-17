@@ -1,5 +1,6 @@
 :root {
   --color-accent: oklch(65% 50% 0);
+  color-scheme: light dark;
 }
 
 * {
@@ -10,8 +11,8 @@
 }
 
 body {
-  background-color: #f8f9fa;
-  color: #333;
+  background-color: canvas;
+  color: canvastext;
   max-width: 100ch;
   margin-inline: auto;
   padding: 20px;
@@ -19,11 +20,12 @@ body {
 }
 
 nav {
+  --border-color: oklch(50% 10% 200 / 40%);
   display: flex;
   gap: 20px;
   padding: 0;
   margin-bottom: 1.5em;
-  border-bottom: 1px solid oklch(80% 3% 200);
+  border-bottom: 1px solid var(--border-color); 
 }
 
 nav ul {
@@ -47,21 +49,20 @@ nav a {
 
 nav a.current {
   font-weight: bold;
-  border-bottom: 4px solid oklch(80% 3% 200);
+  border-bottom: 4px solid var(--border-color);
 }
 
 nav a:hover {
   border-bottom: 4px solid var(--color-accent);
   color: var(--color-accent);
-  background-color: oklch(from var(--color-accent) 95% 5% h);
+  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
 }
 
-/* ✅ FORM STYLING */
 form {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 1em;
-  background-color: white;
+  background-color: color-mix(in srgb, canvastext 5%, transparent);
   padding: 20px;
   border-left: 3px solid var(--color-accent);
   margin-bottom: 25px;
@@ -72,7 +73,15 @@ label {
   grid-template-columns: subgrid;
   grid-column: 1 / -1;
   align-items: center;
-  color: #555;
+  color: canvastext;
+}
+
+label.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 80%;
+  display: inline;
 }
 
 input,
