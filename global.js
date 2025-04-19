@@ -66,3 +66,5 @@ themeSelect.addEventListener('change', function() {
   const selectedTheme = this.value;
   setColorScheme(selectedTheme);
 });
+
+console.log('everything is indeed working')
