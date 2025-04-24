@@ -1,8 +1,5 @@
 :root {
   --color-accent: oklch(65% 50% 0);
-  --border-color: oklch(50% 10% 200 / 40%);
-  --hover-bg: color-mix(in oklch, var(--color-accent), canvas 85%);
-  --shadow-color: oklch(50% 10% 200 / 20%);
   color-scheme: light dark;
 }
 
@@ -18,23 +15,26 @@ body {
   color: canvastext;
   max-width: 100ch;
   margin-inline: auto;
-  padding: 2rem;
+  padding: 20px;
   accent-color: var(--color-accent);
-  line-height: 1.6;
+
 }
 
 nav {
+  --border-color: oklch(50% 10% 200 / 40%);
   display: flex;
-  gap: 1.25rem;
+  gap: 20px;
   padding: 0;
-  margin-bottom: 2rem;
-  border-bottom: 1px solid var(--border-color);
-  position: sticky;
-  top: 0;
-  background-color: canvas;
-  z-index: 100;
-  padding: 0.5rem 0;
-  box-shadow: 0 2px 8px var(--shadow-color);
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid var(--border-color); 
+}
+
+nav ul {
+  display: contents;
+}
+
+nav li {
+  display: contents;
 }
 
 nav a {
@@ -43,48 +43,33 @@ nav a {
   color: inherit;
   font-weight: 500;
   text-decoration: none;
-  padding: 0.75em 0.5em;
-  border-radius: 4px 4px 0 0;
-  border-bottom: 2px solid transparent;
-  transition: all 0.3s ease;
+  padding: 1em 0 0.6em; 
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
 }
 
 nav a.current {
   font-weight: bold;
-  border-bottom: 4px solid var(--color-accent);
-  color: var(--color-accent);
+  border-bottom: 4px solid var(--border-color); 
 }
 
 nav a:hover {
   border-bottom: 4px solid var(--color-accent);
   color: var(--color-accent);
-  background-color: var(--hover-bg);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.2;
-  text-wrap: balance;
-  margin-bottom: 1rem;
+  background-color: color-mix(in oklch, var(--color-accent), canvas 85%);
 }
 
 h1 {
   color: canvastext;
-  font-size: 2.5rem;
-  border-left: 5px solid var(--color-accent);
-  padding-left: 1rem;
-  margin: 1.5rem 0;
-}
-
-h2 {
-  font-size: 1.8rem;
-  color: var(--color-accent);
-  margin: 2rem 0 1rem;
-  border-bottom: 2px solid var(--border-color);
-  padding-bottom: 0.5rem;
+  margin-bottom: 20px;
+  border-left: 3px solid var(--color-accent);
+  padding-left: 10px;
+  font-size: 2em;
 }
 
 p {
-  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
 }
 
 img {
@@ -92,14 +77,13 @@ img {
   height: auto;
   border-left: 3px solid var(--color-accent);
   display: block;
-  margin-bottom: 2rem;
-  border-radius: 0 4px 4px 0;
-  box-shadow: 0 4px 12px var(--shadow-color);
-  transition: transform 0.3s ease;
 }
 
-img:hover {
-  transform: scale(1.01);
+label.color-scheme {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 80%;
 }
 
 .projects {
@@ -195,47 +179,8 @@ img:hover {
   #profile-stats dd {
     font-size: 2rem;
   }
-}
-
-label.color-scheme {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  font-size: 80%;
-  background-color: color-mix(in srgb, canvas 95%, var(--color-accent));
-  padding: 0.5rem;
-  border-radius: 4px;
-  border: 1px solid var(--border-color);
-}
-
-#theme-select {
-  font-size: 90%;
-  margin-left: 0.5rem;
-  background-color: canvas;
-  border: 1px solid var(--border-color);
-  border-radius: 3px;
-  padding: 0.25rem;
-}
-
-@media (max-width: 768px) {
-  body {
-    padding: 1rem;
-  }
-  
-  nav {
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-  
-  h1 {
-    font-size: 2rem;
-  }
   
   .projects {
     grid-template-columns: 1fr;
-  }
-  
-  #profile-stats dl {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
