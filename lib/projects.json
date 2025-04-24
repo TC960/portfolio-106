@@ -1,0 +1,93 @@
+[
+    {
+        "title": "PharmaItAll",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Built an AI chatbot using Pinecone VectorDB for search and leveraged Gemini for tailored responses. Converted 100+ pharmaceutical PDFs into vector embeddings for context-aware answers and developed a user-friendly React frontend with Flask endpoints.",
+        "year": "2024"
+    },
+    {
+        "title": "Munch: The AI-Driven Culinary Assistant",
+        "image": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/003/091/063/datas/medium.png",
+        "description": "Created a game-changing recipe app with GenAI that recognizes ingredients from photos and generates easy recipes. Designed with Flutter for cross-platform use and integrated Hume AI's Empathic Voice Interface for hands-free cooking instructions.",
+        "year": "2024"
+    },
+    {
+        "title": "ReSearch",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Developed a tool that analyzes professors' websites and interests based on their email/name to generate alignment scores with personal research interests. Utilized Gmail API to automatically draft personalized emails seeking research opportunities.",
+        "year": "2023"
+    },
+    {
+        "title": "Triton Neurotech Dendrite Project",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Led development of a versatile exoskeleton for shoulder physiotherapy with an innovative inflatable structure. Enhanced functionality based on Harvard study insights for continuous wear, enabling users to be awake and standing.",
+        "year": "2024"
+    },
+    {
+        "title": "Candidate Analysis System",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Developed software for enhanced candidate analysis during interviews, focusing on frontend and database management. Utilized FFmpeg and SpeechRecognition to convert video data to text, then deployed a Gemini AI query system to evaluate responses.",
+        "year": "2024"
+    },
+    {
+        "title": "Spiking Neural Networks (SNNs) Research",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Worked on developing and evaluating Spiking Neural Networks to improve real-time pattern recognition and object detection compared to traditional Artificial Neural Networks. Designed and optimized various SNN architectures with parameter tuning.",
+        "year": "2024"
+    },
+    {
+        "title": "Spotify Song Recommendation",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Developed a song recommendation system using Spotify and Genius APIs to analyze and recommend music based on 20+ criteria including danceability, likeability, energy, and tempo. Created personalized playlists by matching user preferences with song attributes.",
+        "year": "2023"
+    },
+    {
+        "title": "TaxDaddy",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Built an AI-powered tax filing web application with document upload, voice-enabled assistance via Twilio, and real-time analytics. Implemented OCR for data extraction, MongoDB for storage, and a RAG system for answering queries and automated form completion with PyPDF Filler.",
+        "year": "2025"
+    },
+    {
+        "title": "Pop Off!",
+        "image": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/003/363/415/datas/medium.png",
+        "description": "Created an AI fitness web app that matches users to pop star lookalikes using OpenCV facial analysis and generates music-synced workouts based on Spotify song BPM. Implemented real-time exercise rep counting with MediaPipe pose detection through webcam integration.",
+        "year": "2025"
+    },
+    {
+        "title": "See With Me",
+        "image": "https://d112y698adiu2z.cloudfront.net/photos/production/software_thumbnail_photos/003/370/874/datas/medium.png",
+        "description": "Developed a digital forensics tool that uses Meta Ray-Ban smart glasses and a fine-tuned YOLOv11n computer vision model to identify and track digital devices in real-time. Created an LLM-based image analysis pipeline to generate searchable forensic insights.",
+        "year": "2025"
+    },
+    {
+        "title": "Triton Neurotech SSVEP EEG RC Car",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Developed a brain-computer interface that uses Steady-State Visual Evoked Potentials (SSVEP) detected via EEG to control a remote car. Users focus on specific visual stimuli that correspond to movement commands, enabling hands-free operation and demonstrating practical BCI applications.",
+        "year": "2025"
+    },
+    {
+        "title": "GenAsis",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Built a containerized web application for AI-assisted video script generation using React and FastAPI. Implemented Docker containers orchestrated via Kubernetes for scalability, with WebSocket protocol for real-time streaming. Integrated Firebase Authentication and Firestore with CI/CD pipelines for automated testing.",
+        "year": "2025"
+    },
+    {
+        "title": "Seasons of Sales: Data-Driven Retail Analysis",
+        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+        "description": "Investigated seasonal retail patterns using Python analytics stack with permutation tests and RandomForest classifier. Optimized across 3,780 hyperparameter combinations via RandomizedSearchCV, revealing that only month/calendar variables significantly predicted seasonal trends (55% accuracy) despite analyzing transaction quantities, pricing, and customer behaviors.",
+        "year": "2022"
+    },
+    {
+    "title": "Power Outage Analysis",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Predicted U.S. power outage causes using ML models on 1,534 outages (2000-2016). Implemented RandomForest classifier with RandomizedSearchCV, revealing regional accuracy disparities. Employed hypothesis testing (TVD metric), NMAR analysis for missing data, and feature engineering with scikit-learn pipelines, cross-validation, and fairness evaluation.",
+    "year": "2021"
+    },
+    {
+    "title": "Personal Portfolio Website",
+    "image": "https://vis-society.github.io/labs/2/images/empty.svg",
+    "description": "Designed and developed a responsive personal portfolio website using React, Vite, CSS, and Framer Motion. Implemented smooth animations and transitions to create an engaging user experience while showcasing projects and skills.",
+    "year": "2023"
+    }
+
+]
