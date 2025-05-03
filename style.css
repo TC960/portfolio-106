@@ -94,8 +94,10 @@ label.color-scheme {
 }
 
 .projects article {
+  position: relative; 
   background-color: color-mix(in srgb, canvas 90%, var(--color-accent));
   padding: 1.5rem;
+  padding-bottom: 3.5rem;
   border-left: 3px solid var(--color-accent);
   border-radius: 0 8px 8px 0;
   box-shadow: 0 4px 10px var(--shadow-color);
@@ -142,6 +144,20 @@ label.color-scheme {
   color: canvastext;
   border-bottom: none;
 }
+
+.project-year {
+  position: absolute;
+  bottom: 15px; 
+  left: 1.5rem; 
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #e0e0e0;
+  font-size: 0.85rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 
 #profile-stats {
   font-family: system-ui, -apple-system, sans-serif;

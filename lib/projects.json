@@ -75,19 +75,19 @@
         "title": "Seasons of Sales: Data-Driven Retail Analysis",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Investigated seasonal retail patterns using Python analytics stack with permutation tests and RandomForest classifier. Optimized across 3,780 hyperparameter combinations via RandomizedSearchCV, revealing that only month/calendar variables significantly predicted seasonal trends (55% accuracy) despite analyzing transaction quantities, pricing, and customer behaviors.",
-        "year": "2022"
+        "year": "2025"
     },
     {
     "title": "Power Outage Analysis",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
     "description": "Predicted U.S. power outage causes using ML models on 1,534 outages (2000-2016). Implemented RandomForest classifier with RandomizedSearchCV, revealing regional accuracy disparities. Employed hypothesis testing (TVD metric), NMAR analysis for missing data, and feature engineering with scikit-learn pipelines, cross-validation, and fairness evaluation.",
-    "year": "2021"
+    "year": "2025"
     },
     {
     "title": "Personal Portfolio Website",
     "image": "https://vis-society.github.io/labs/2/images/empty.svg",
     "description": "Designed and developed a responsive personal portfolio website using React, Vite, CSS, and Framer Motion. Implemented smooth animations and transitions to create an engaging user experience while showcasing projects and skills.",
-    "year": "2023"
+    "year": "2024"
     }
 
 ]
