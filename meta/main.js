@@ -245,6 +245,7 @@ function renderScatterPlot(data, commits) {
       
       updateTooltipVisibility(false);
     });
+    createBrushSelector(svg);
 }
 
 
