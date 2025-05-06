@@ -426,3 +426,21 @@ dl.info[hidden]:not(:hover, :focus-within) {
   font-weight: 600;
   color: var(--color-accent);
 }
+
+@keyframes marching-ants {
+  to {
+    stroke-dashoffset: -8; /* 5 + 3 */
+  }
+}
+
+.selection {
+  fill-opacity: 0.2;
+  fill: var(--color-accent);
+  stroke: black;
+  stroke-opacity: 0.7;
+  stroke-dasharray: 5 3;
+  animation: marching-ants 2s linear infinite;
+}
+circle.selected {
+  fill: var(--color-accent);
+}
