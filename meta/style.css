@@ -19,7 +19,7 @@
 body {
   background-color: canvas;
   color: canvastext;
-  max-width: 100ch;
+  max-width: 120ch;
   margin-inline: auto;
   padding: 20px;
   accent-color: var(--color-accent);
@@ -169,6 +169,9 @@ p {
   display: none;
   gap: 1rem;
   margin: 1rem 0;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .scrolly-section.active {
@@ -588,7 +591,7 @@ circle.selected {
 }
 
 #scatter-plot #chart {
-  height: 95%; /* Increased from 90% to maximize chart space */
+  height: 90%; /* Adjusted from 92% to accommodate larger language breakdown */
   width: 100%;
 }
 
@@ -599,9 +602,44 @@ circle.selected {
 }
 
 #scatter-plot #language-breakdown {
-  height: 5%; /* Reduced from 10% to maximize chart space */
+  height: 10%; /* Increased from 8% for better text visibility */
   overflow-y: auto;
-  font-size: 0.75rem; /* Smaller text to fit in less space */
+  font-size: 0.8rem; /* Increased font size for better readability */
+  padding: 0.75rem; /* Increased padding */
+  background-color: color-mix(in oklch, var(--stats-bg), canvas 80%);
+  border-radius: 4px;
+  margin-top: 0.5rem;
+  border: 1px solid var(--border-color);
+}
+
+#language-breakdown {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.8rem;
+  align-items: center;
+  line-height: 1.4;
+  min-height: 1.5rem;
+  white-space: nowrap;
+}
+
+#language-breakdown dt {
+  font-weight: 600;
+  color: var(--color-accent);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-right: 0.25rem;
+  display: inline;
+}
+
+#language-breakdown dd {
+  color: canvastext;
+  margin: 0;
+  font-size: 0.75rem;
+  margin-right: 1rem;
+  font-weight: 500;
+  display: inline;
 }
 
 .step {
@@ -662,7 +700,8 @@ circle.selected {
 @media (max-width: 768px) {
   .scrolly-section {
     flex-direction: column;
-    gap: 0.5rem; /* Minimal gap on mobile */
+    gap: 0.5rem;
+    width: 95%; /* Slightly wider on mobile for better space usage */
   }
   
   #scatter-story, #files-story {
@@ -671,15 +710,15 @@ circle.selected {
   
   #scatter-plot, #files-plot {
     position: relative;
-    height: 70vh; /* Increased from 60vh for mobile */
+    height: 70vh;
     top: 0;
-    padding: 0.25rem; /* Minimal padding on mobile */
+    padding: 0.25rem;
   }
   
   .step {
-    min-height: 15vh; /* Even flatter on mobile */
-    padding: 0.6rem; /* Reduced padding on mobile */
-    margin-bottom: 0.6rem; /* Reduced margin on mobile */
+    min-height: 15vh;
+    padding: 0.6rem;
+    margin-bottom: 0.6rem;
   }
   
   .commit-date {
@@ -696,12 +735,28 @@ circle.selected {
   
   .view-toggle {
     width: 100%;
-    margin: 1rem 0; /* Reduced margin */
+    margin: 1rem 0;
   }
   
   .toggle-label {
     flex: 1;
     justify-content: center;
-    padding: 0.5rem 1rem; /* Reduced padding */
+    padding: 0.5rem 1rem;
+  }
+  
+  #language-breakdown {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 0.25rem;
+  }
+}
+
+/* For larger screens */
+@media (min-width: 1200px) {
+  .scrolly-section {
+    width: 85%; /* Slightly wider on large screens */
+  }
+  
+  body {
+    max-width: 140ch; /* Even wider container for large screens */
   }
 }
